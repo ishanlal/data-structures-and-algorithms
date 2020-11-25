@@ -1,0 +1,19 @@
+Project 1: Unscramble Computer Science Problems
+Date: August 30th, 2020
+Author: Ishan K. Lal
+
+Worst case discussions:
+Task 0:
+Here we are printing two lines with no input 'n'. So its constant time ie: BigO = O(1).
+
+Task 1:
+Here we are counting all records in text as well as calls so we need to go thru the list which is of size 'nX2'. one column for send and one for receive. So that's O(n+2) for each text and call csv file => O(2n +4) => BigO = O(n).
+
+Task 2:
+Here we are scanning the call record and creating a unique list of all numbers and their corresponding sum total of call duration. Then we scan for the single highest record which requires going through the whole list of call inputs twice = n^2. BigO = O(n^2).
+
+Task 3:
+Here we are answering questions about the data which require traversing through each data record. So, BigO = O(n) but there is a sort call that has a complexity of O(nlogn). Since, O(nlogn) is much worse than O(n). Total BigO = O(n+nlogn) => O(nlogn) (ignoring constants).
+
+Task 4:
+To answer these questions we need to traverse all the input data records couple of times and perform set arithmetic to calculate the numbers. BigO = O(4n) The sort call is O(nlogn) and is significantly higher than O(n). So, BigO = O(nlogn) (ignoring constants).
